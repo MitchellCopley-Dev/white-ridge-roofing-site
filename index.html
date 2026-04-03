@@ -7,6 +7,10 @@
     <meta name="description" content="Local roofing experts in North Salt Lake, UT. Specialized in emergency roof repair, hail damage, and full replacements. Licensed & Insured. Get a free quote!">
     <meta name="google-site-verification" content="google5aa38acaa66e9fa4" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Mobile menu toggle utility */
+        #mobile-menu.hidden { display: none; }
+    </style>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -38,15 +42,33 @@
         <a href="tel:8010000000" class="block w-full bg-orange-600 text-white text-center py-4 rounded-xl font-bold text-lg shadow-lg">📞 CALL FOR A FREE QUOTE</a>
     </div>
 
-    <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-sm sticky top-0 z-40">
-        <div class="text-2xl font-black text-slate-800">WHITE RIDGE <span class="text-orange-600">ROOFING</span></div>
-        <div class="hidden md:block space-x-6 font-medium">
-            <a href="index.html" class="hover:text-orange-600">Home</a>
-            <a href="roof-repair.html" class="hover:text-orange-600">Repair</a>
-            <a href="hail-damage.html" class="hover:text-orange-600">Storm Damage</a>
-            <a href="commercial-roofing.html" class="hover:text-orange-600">Commercial</a>
-            <a href="emergency-roofing.html" class="hover:text-red-600 text-red-600 font-bold">Emergency Repair</a>
-            <a href="about.html" class="hover:text-orange-600">About</a>
+    <nav class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-2xl font-black text-slate-800">WHITE RIDGE <span class="text-orange-600">ROOFING</span></div>
+            
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="index.html" class="hover:text-orange-600">Home</a>
+                <a href="roof-repair.html" class="hover:text-orange-600">Repair</a>
+                <a href="hail-damage.html" class="hover:text-orange-600">Storm Damage</a>
+                <a href="commercial-roofing.html" class="hover:text-orange-600">Commercial</a>
+                <a href="emergency-roofing.html" class="text-red-600 font-bold">Emergency Repair</a>
+                <a href="about.html" class="hover:text-orange-600">About</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-slate-800 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-4 shadow-xl">
+            <a href="index.html" class="block font-bold py-2 border-b">Home</a>
+            <a href="roof-repair.html" class="block font-bold py-2 border-b">Repair</a>
+            <a href="hail-damage.html" class="block font-bold py-2 border-b">Storm Damage</a>
+            <a href="commercial-roofing.html" class="block font-bold py-2 border-b">Commercial</a>
+            <a href="emergency-roofing.html" class="block font-bold py-2 border-b text-red-600">Emergency Repair</a>
+            <a href="about.html" class="block font-bold py-2">About</a>
         </div>
     </nav>
 
@@ -61,17 +83,14 @@
     </section>
 
     <section id="gallery" class="py-20 px-6 bg-slate-50 border-b">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900">Our Recent Work</h2>
-                <p class="mt-4 text-lg text-slate-600">Real results for real homeowners in Davis County.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900">Our Recent Work</h2>
+            <p class="mt-4 text-lg text-slate-600">Real results for real homeowners in Davis County.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
                 <div class="bg-white rounded-2xl shadow-md overflow-hidden text-center p-4">
                     <div class="h-64 bg-slate-200 flex items-center justify-center text-slate-400 italic mb-4">[Full Replacement Image]</div>
                     <h3 class="font-bold text-xl">Full Replacement</h3>
                     <p class="text-sm text-slate-500 mb-2">📍 Bountiful, UT</p>
-                    <p class="text-slate-600">Complete architectural shingle upgrade.</p>
                 </div>
                 <div class="bg-white rounded-2xl shadow-md overflow-hidden border-2 border-red-100 text-center p-4">
                     <div class="h-64 bg-slate-200 flex items-center justify-center text-slate-400 italic mb-4">[Emergency Repair Image]</div>
@@ -102,7 +121,7 @@
                     <option>Storm Damage</option>
                     <option>Commercial</option>
                 </select>
-                <button type="submit" class="md:col-span-2 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-black">Submit Request</button>
+                <button type="submit" class="md:col-span-2 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-black transition">Submit Request</button>
             </form>
         </div>
     </section>
@@ -123,5 +142,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
