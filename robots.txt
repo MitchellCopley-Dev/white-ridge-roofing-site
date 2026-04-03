@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://white-ridge-roofing-utah-demo.netlify.app/sitemap.xml
