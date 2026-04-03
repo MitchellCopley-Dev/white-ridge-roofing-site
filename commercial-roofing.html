@@ -10,10 +10,15 @@
 <body class="bg-white text-slate-900">
 
     <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-sm border-b sticky top-0 z-50">
-        <div class="text-xl font-black"><a href="index.html">WHITE RIDGE <span class="text-orange-600">ROOFING</span></a></div>
+        <div class="text-xl font-black text-slate-900"><a href="/">WHITE RIDGE <span class="text-orange-600">ROOFING</span></a></div>
+        <div class="hidden md:flex space-x-6 font-medium text-slate-700">
+            <a href="/" class="hover:text-orange-600 text-sm">Home</a>
+            <a href="roof-repair.html" class="hover:text-orange-600 text-sm">Repair</a>
+            <a href="hail-damage.html" class="hover:text-orange-600 text-sm">Storm Damage</a>
+            <a href="emergency-roofing.html" class="hover:text-red-600 text-red-600 font-bold text-sm">Emergency</a>
+        </div>
         <div class="space-x-4">
-            <a href="index.html" class="text-sm font-bold hover:text-orange-600">Home</a>
-            <a href="tel:8010000000" class="bg-slate-900 text-white px-4 py-2 rounded-lg text-sm">Commercial Quote</a>
+            <a href="tel:8010000000" class="bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-bold">Commercial Quote</a>
         </div>
     </nav>
 
@@ -38,27 +43,27 @@
 
     <section class="py-20 px-6">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-16">Our Commercial Specialties</h2>
+            <h2 class="text-3xl font-bold mb-16 text-slate-900">Our Commercial Specialties</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="p-8 border rounded-3xl hover:shadow-xl transition">
-                    <h3 class="text-xl font-bold mb-4">TPO & EPDM</h3>
+                    <h3 class="text-xl font-bold mb-4 text-slate-900">TPO & EPDM</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Single-ply membranes that offer superior protection and energy savings for flat and low-slope roofs.</p>
                 </div>
                 <div class="p-8 border rounded-3xl hover:shadow-xl transition">
-                    <h3 class="text-xl font-bold mb-4">Roof Coatings</h3>
+                    <h3 class="text-xl font-bold mb-4 text-slate-900">Roof Coatings</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Extend the life of your existing commercial roof and reduce cooling costs with high-performance silicone coatings.</p>
                 </div>
                 <div class="p-8 border rounded-3xl hover:shadow-xl transition">
-                    <h3 class="text-xl font-bold mb-4">Preventative Maintenance</h3>
+                    <h3 class="text-xl font-bold mb-4 text-slate-900">Preventative Maintenance</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Regular inspections and maintenance plans to catch small issues before they become expensive business disruptions.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-slate-900 text-white px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6 italic">Built for Utah Business</h2>
+    <section class="py-16 bg-slate-900 text-white px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 italic text-white">Built for Utah Business</h2>
             <p class="text-slate-400 mb-10 text-lg">We understand that a roofing project shouldn't stop your operations. We work around your schedule to ensure minimal downtime and maximum safety.</p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div>
@@ -81,10 +86,10 @@
         </div>
     </section>
 
-    <section id="commercial-form" class="py-20 px-6">
-        <div class="max-w-4xl mx-auto bg-slate-50 p-10 rounded-3xl border">
-            <h2 class="text-3xl font-bold text-center mb-8">Get a Commercial Quote</h2>
-            <form name="commercial-leads" method="POST" data-netlify="true" class="grid md:grid-cols-2 gap-6">
+    <section id="commercial-form" class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto bg-slate-50 p-10 rounded-3xl border border-slate-200">
+            <h2 class="text-3xl font-bold text-center mb-8 text-slate-900">Get a Commercial Quote</h2>
+            <form name="commercial-leads" method="POST" data-netlify="true" action="/success" class="grid md:grid-cols-2 gap-6">
                 <input type="text" name="business-name" placeholder="Business Name" class="p-4 border rounded-xl" required>
                 <input type="text" name="contact-name" placeholder="Contact Person" class="p-4 border rounded-xl" required>
                 <input type="tel" name="phone" placeholder="Phone Number" class="p-4 border rounded-xl" required>
@@ -96,7 +101,7 @@
     </section>
 
     <footer class="bg-white py-12 px-6 border-t text-center">
-        <div class="font-black text-xl mb-4">WHITE RIDGE <span class="text-orange-600">ROOFING</span></div>
+        <div class="font-black text-xl mb-4 text-slate-900">WHITE RIDGE <span class="text-orange-600">ROOFING</span></div>
         <p class="text-slate-500">Serving the commercial interests of North Salt Lake, UT 84054 and Davis County.</p>
     </footer>
 
