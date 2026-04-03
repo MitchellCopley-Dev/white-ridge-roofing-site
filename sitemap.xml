@@ -5,24 +5,40 @@
     <lastmod>2026-04-02</lastmod>
     <priority>1.00</priority>
   </url>
-  <url>
-    <loc>https://white-ridge-roofing-utah-demo.netlify.app/roof-repair.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.80</priority>
-  </url>
+
   <url>
     <loc>https://white-ridge-roofing-utah-demo.netlify.app/emergency-roofing.html</loc>
     <lastmod>2026-04-02</lastmod>
-    <priority>0.90</priority>
+    <priority>0.95</priority>
   </url>
+
   <url>
     <loc>https://white-ridge-roofing-utah-demo.netlify.app/hail-damage.html</loc>
     <lastmod>2026-04-02</lastmod>
     <priority>0.85</priority>
   </url>
+
+  <url>
+    <loc>https://white-ridge-roofing-utah-demo.netlify.app/roof-repair.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://white-ridge-roofing-utah-demo.netlify.app/commercial-roofing.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <priority>0.75</priority>
+  </url>
+
   <url>
     <loc>https://white-ridge-roofing-utah-demo.netlify.app/about.html</loc>
     <lastmod>2026-04-02</lastmod>
     <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://white-ridge-roofing-utah-demo.netlify.app/success.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <priority>0.30</priority>
   </url>
 </urlset>
